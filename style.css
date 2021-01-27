@@ -3,7 +3,9 @@ section.cart-page {
   padding: 50px 0 100px 0;
 }
 
-
+p {
+  margin: 0;
+}
 
 .cart-page .cart-header,
 .cart-page .cart-content,
@@ -67,18 +69,21 @@ section.cart-page {
   padding: 1px;
 }
 
-.book-quantity .quantity-btn {
+.book-quantity .quantity-btn-plus,
+.book-quantity .quantity-btn-minus {
   background-color: #e9ecef;
   width: 40px;
   text-align: center;
   padding: 1px;
 }
 
-.book-quantity .quantity-btn:focus {
+.book-quantity .quantity-btn-plus:focus,
+.book-quantity .quantity-btn-minus:focus {
   box-shadow: none;
 }
 
-.book-quantity .quantity-btn i {
+.book-quantity .quantity-btn-plus i,
+.book-quantity .quantity-btn-minus i {
   font-size: 16px;
   font-weight: 300;
 }
@@ -129,22 +134,19 @@ section.cart-page {
   padding-bottom: 10px;
 }
 
-.custom-control-input:focus~.custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem rgb(51 194 77 / .25);
-}
-
-#wrappertr2 {
+.alert {
   display: none;
 }
 
-.custom-control-input:checked~.custom-control-label::before {
-  color: #fff;
-  border-color: #33c24d;
-  background-color: #33c24d;
+.alert p {
+  display: inline-block;
 }
 
-.checkout-sidebar-content .gift-wrap .custom-control-label {
-  color: #33c24d;
-  font-size: 16px;
-  font-weight: 500;
+.alert p a {
+  margin-left: 10px;
+  font-weight: 900;
+}
+
+.alert p a:hover {
+  text-decoration: none;
 }
